@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a Mobile Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background-color: #ff0066;
+      color: white;
+      padding: 20px 10px;
+    }
+    section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+    }
+    .video {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .social-buttons {
+      margin: 20px 0;
+    }
+    .social-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #ff0066;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .sucursales {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    footer {
+      font-size: 12px;
+      color: #ccc;
+      padding: 20px;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t39.30808-1/421492093_1174320386962987_5194226986935920086_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeE6dAoLc7b_FSPIzFA-qOPXo7KLBJK_AwOjsosEkr8DA2x5sJxfhUet5U08-JBJYfe0J0j03WzIxRDUwbkXURFk&_nc_ohc=8XnKO_Zh3lAQ7kNvwEYO0Qs&_nc_oc=Adm6YYvPSpqlceNQ14nebqGb2YudaUF3nqO-kr0v3sz9N7ULYqce4-D-Fl9iMUNwUmW-zqXBSXO4FXczwveuHvm3&_nc_zt=24&_nc_ht=scontent.fgdl3-1.fna&_nc_gid=0S7TDij3C6BMrc0sgRzYmQ&oh=00_AfWa9cNMMx_Ov5mGRqLgNFjBwmYJqC07s0GgYYPgFA1U0A&oe=6898799D" alt="Logo" class="logo">
+    <h1>¡Bienvenido a Mobile Store!</h1>
+    <p>Con nosotros es más barato renovar que reparar</p>
+  </header>
+
+  <section>
+    <h2>Disfruta de 30 minutos de Wi-Fi GRATIS</h2>
+    <p>Mira el siguiente video hasta el final para acceder:</p>
+    <div class="video">
+      <video id="videoPromo" width="100%" height="500" autoplay muted playsinline controls>
+        <source src="https://raw.githubusercontent.com/Mirandap3/mobilestore-wifi/main/Video%20de%20WhatsApp%202025-08-05%20a%20las%2018.44.22_0e70fd26.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+
+    <div class="social-buttons">
+      <p>Síguenos en nuestras redes sociales:</p>
+      <a href="https://www.instagram.com/mobile_storem" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100031551103240&locale=es_LA" target="_blank">Facebook</a>
+      <a href="http://tiktok.com/@mobile_storem" target="_blank">TikTok</a>
+    </div>
+
+    <div class="sucursales">
+      <h3>Visítanos en:</h3>
+      <p><strong>Tepatitlán de Morelos, Jalisco</strong></p>
+      <p>Av. González Carnicerito 558</p>
+      <p>Mapelo 78 (Isla en Farmacias Tepa)</p>
+      <p><strong>Contacto:</strong> 378 149 6230</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Este acceso es gratuito por tiempo limitado. Sujeto a disponibilidad. Al utilizar este servicio aceptas nuestros <a href="#" style="color: #ccc; text-decoration: underline;">términos y condiciones</a>.</p>
+  </footer>
+
+  <script>
+    // Permitir sonido al hacer clic en cualquier parte
+    window.addEventListener('click', function () {
+      const video = document.getElementById('videoPromo');
+      video.muted = false;
+      video.volume = 1.0;
+    }, { once: true });
+  </script>
+</body>
+</html>
